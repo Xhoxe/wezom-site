@@ -18,118 +18,206 @@
 	--color-success-weak: #d3ffea;
 	--color-rating-star: #ffc700;
 	--color-action-primary: #f1e846;
+	--color-action-primary-hover-bg: #f0eb8f;
+	--color-action-primary-active-bg: #d2ca3e;
 	--color-form-border: #c7ccd4;
 	--color-divider: #ebf0f5;
 
 	/* Тень блоков */
 	--shadow-inset-1: inset 0 1px 2px 1px rgb(38 39 40 / 20%);
 	--shadow-1: 0 0 1px rgb(38 39 40 / 10%), 0 1px 2px rgb(38 39 40 / 10%);
-	--shadow-2: 0 3px 8px rgb(38 39 40 / 3%), 0 1.5px 3px rgb(38 39 40 / 4%),
-		0 0.5px 1px rgb(38 39 40 / 10%);
-	--shadow-3: 0 6px 16px rgb(38 39 40 / 4%), 0 3px 5px rgb(38 39 40 / 4%),
-		0 1.5px 2px rgb(38 39 40 / 3.08%), 0 0.5px 0.8px rgb(38 39 40 / 2.09%);
-	--shadow-4: 0 4px 16px rgb(38 39 40 / 6%), 0 3px 5px rgb(38 39 40 / 5%),
-		0 1.5px 3.5px rgb(38 39 40 / 5%), 0 0.8px 2px rgb(38 39 40 / 4%),
-		0 0.3px 1px rgb(38 39 40 / 3%);
-	--shadow-5: 0 8px 20px rgb(38 39 40 / 10%), 0 4px 9px rgb(38 39 40 / 8%),
-		0 2px 5px rgb(38 39 40 / 5.96%), 0 1px 3px rgb(38 39 40 / 5%),
-		0 0.5985px 1.5px rgb(38 39 40 / 4.04%),
-		0 0.2491px 1px rgb(38 39 40 / 3%);
-	--shadow-6: 0 8px 20px rgb(38 39 40 / 10%), 0 4px 9px rgb(38 39 40 / 8%),
-		0 2px 5px rgb(38 39 40 / 5.96%), 0 1px 3px rgb(38 39 40 / 5%),
-		0 0.5985px 1.5px rgb(38 39 40 / 4.04%),
-		0 0.2491px 1px rgb(38 39 40 / 3%);
+	--shadow-2: 0 3px 8px rgb(38 39 40 / 3%), 0 1.5px 3px rgb(38 39 40 / 4%), 0 0.5px 1px rgb(38 39 40 / 10%);
+	--shadow-3: 0 6px 16px rgb(38 39 40 / 4%), 0 3px 5px rgb(38 39 40 / 4%), 0 1.5px 2px rgb(38 39 40 / 3.08%),
+		0 0.5px 0.8px rgb(38 39 40 / 2.09%);
+	--shadow-4: 0 4px 16px rgb(38 39 40 / 6%), 0 3px 5px rgb(38 39 40 / 5%), 0 1.5px 3.5px rgb(38 39 40 / 5%),
+		0 0.8px 2px rgb(38 39 40 / 4%), 0 0.3px 1px rgb(38 39 40 / 3%);
+	--shadow-5: 0 8px 20px rgb(38 39 40 / 10%), 0 4px 9px rgb(38 39 40 / 8%), 0 2px 5px rgb(38 39 40 / 5.96%),
+		0 1px 3px rgb(38 39 40 / 5%), 0 0.5985px 1.5px rgb(38 39 40 / 4.04%), 0 0.2491px 1px rgb(38 39 40 / 3%);
+	--shadow-6: 0 8px 20px rgb(38 39 40 / 10%), 0 4px 9px rgb(38 39 40 / 8%), 0 2px 5px rgb(38 39 40 / 5.96%),
+		0 1px 3px rgb(38 39 40 / 5%), 0 0.5985px 1.5px rgb(38 39 40 / 4.04%), 0 0.2491px 1px rgb(38 39 40 / 3%);
 }
 
 body {
 	color: var(--color-text-main-strong);
+	margin: 0;
+}
+
+input,
+button {
+	font: inherit;
 }
 
 /* Типография */
 
-.typography-h1 {
-	font-family: "Google Sans", sans-serif;
+.typography {
+	font-family: 'Google Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+}
+
+.typography--h1 {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 48px;
 }
 
-.typography-h2 {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
-	font-weight: 400;
+.typography--h2 {
 	font-size: 24px;
 	line-height: 40px;
 }
 
-.typography-h3 {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
+.typography--h3 {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 30px;
 }
 
-.typography-h4 {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
+.typography--h4 {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
 }
 
-.typography-decor {
-	font-family: "PT Serif", serif;
+.typography--decor {
+	font-family: 'PT Serif', serif;
 	font-style: italic;
-	font-weight: 400;
 	font-size: 36px;
 	line-height: 40px;
 }
 
-.typography-base {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
-	font-weight: 400;
+.typography--base {
 	font-size: 15px;
 	line-height: 20px;
 }
 
-.typography-small {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
-	font-weight: 400;
+.typography--small {
 	font-size: 12px;
 	line-height: 16px;
 }
 
-.typography-large {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
-	font-weight: 400;
+.typography--large {
 	font-size: 20px;
 	line-height: 32px;
 }
 
-.typography-remark {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
+.typography--remark {
 	font-weight: 500;
 	font-size: 10px;
 	line-height: 16px;
 }
 
-.typography-label {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
+.typography--label {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
 }
 
-.typography-label2 {
-	font-family: "Google Sans", sans-serif;
-	font-style: normal;
+.typography--label2 {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
+}
+
+/* Контейнер */
+.container {
+	max-width: 1720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Widget */
+.widget--footer {
+	padding: 80px 0 60px;
+	background: var(--color-divider);
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer + .footer {
+	margin-top: 110px;
+}
+
+.footer__column {
+	border: 1px solid silver;
+}
+
+.footer__column--left {
+	width: 410px;
+}
+
+.footer__column--right {
+	width: 850px;
+}
+
+.footer-block__title {
+	margin-bottom: 28px;
+}
+
+.footer-block__content {
+	color: var(--color-text-additional);
+}
+
+.footer-contacts {
+	margin-top: 95px;
+}
+
+/* subscribe-form */
+.subscribe-form {
+	margin-top: 11px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.subscribe-form__email {
+	height: 50px;
+	box-sizing: border-box;
+	padding: 14px 18px 16px;
+	border: 1px solid transparent;
+	border-right-width: 0;
+	background-color: #fff;
+	background-clip: padding-box;
+	border-radius: 5px 0 0 5px;
+}
+
+.subscribe-form__email:focus {
+	box-shadow: var(--shadow-6);
+	outline: none;
+}
+
+.subscribe-form__email::placeholder {
+	color: var(--color-text-additional);
+	opacity: 1;
+}
+
+.subscribe-form__submit {
+	height: 50px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 13px 22px;
+	border-width: 0;
+	background: var(--color-action-primary);
+	border-radius: 4px;
+	margin-left: -2px;
+	cursor: pointer;
+}
+
+.subscribe-form__submit:focus {
+	outline: none;
+	box-shadow: var(--shadow-6);
+}
+
+.subscribe-form__submit:hover {
+	background: var(--color-action-primary-hover-bg);
+}
+
+.subscribe-form__submit:active {
+	background: var(--color-action-primary-active-bg);
 }
